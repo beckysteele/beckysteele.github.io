@@ -2,17 +2,15 @@
 <html> <!-- Begin HTML Structure -->
 <head> <!-- Begin Head Elements -->
 
-<!-- Hello Joe! -->
-
 <!-- Meta Tags -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1">
 
 <!-- Link & Script Tags -->
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'> <!-- Font for "Fancy" in header-->
   <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <!-- Paragraph font-->
-  <link rel="stylesheet" type="text/css" href="style.min.css" media="screen">
 
 <!--  Website Title -->
 
@@ -49,6 +47,9 @@
     
     <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0" src="" allowfullscreen></iframe>
 
+    <!-- Image Copyright Info -->
+    <p id="copyright"></p>
+
     <!-- API-Returned Explanation for APOD Object -->
     
     <div class="explanation">
@@ -81,7 +82,7 @@
       <!-- Link to NASA'S Original APOD Website -->
 
       <div class="NASA-APOD-button">
-        <a href="http://apod.nasa.gov/apod/astropix.html" target="_blank"><img src="nasa_logo.gif" class="nasa"><p class="second-word">APOD</p></a>
+        <a href="http://apod.nasa.gov/apod/astropix.html" target="_blank"><p class="first-word">Original</p><p class="second-word">NASA APOD</p></a>
       </div>
 
     </div>  <!-- End Footer Elements-->
