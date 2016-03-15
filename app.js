@@ -1,7 +1,7 @@
 // ****** AJAX Request from NASA's Astronomy Photo of the Day (APOD) API ****** //
 // ****** Utilizing API key ****** //
 
-var url = "https://api.nasa.gov/planetary/apod?concept_tags=TRUE&api_key=IR5CpuR5rG9sFTQ46bBK8VTu0u3NxUk60WcQhtRj";
+var url = "https://api.nasa.gov/planetary/apod?api_key=IR5CpuR5rG9sFTQ46bBK8VTu0u3NxUk60WcQhtRj";
 
 $(document).ready(function() { // ****** Begin Document Ready Anonymous Function ****** //
 
