@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- DOCTYPE Declaration -->
+<html> <!-- Begin HTML Structure -->
+<head> <!-- Begin Head Elements -->
+
+<!-- Meta Tags -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1">
+
+<!-- Link & Script Tags -->
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <link href='http://fonts.googleapis.com/css?family=Rouge+Script' rel='stylesheet' type='text/css'> <!-- Font for "Fancy" in header-->
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <!-- Paragraph font-->
+
+<!--  Website Title -->
+
+  <title>Fancy APOD</title>
+
+</head> <!-- End Head Elements -->
+
+<!-- HTML Body -->
+<body>
+
+<!-- Header Div & Elements -->
+  <div class="header">
+    <h1 class="first-word">Fancy</h1>
+    <h1 class="second-word">APOD</h1>
+  </div>
+
+<!-- API Elements & Main Container -->
+  
+  <h1 id="apod_title"></h1>
+
+  <div class="fancy-date"> <!-- Custom JavaScript Implemented -->
+    <h2>NASA's Astronomy Photo of the Day</h2><br>
+    <h2 id="day"></h2>  
+    <h2 id="month"></h2>
+    <h2 id="date"></h2>
+    <h2 id="year"></h2>
+  </div>    
+  
+  <div id="container">
+
+    <!-- If API Returns Media_Type = image -->
+    <a id="image-link" href=""><img id="apod_img_id" alt"" title""></a>
+
+    <!-- If API Returns Media_Type = video -->
+    
+    <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0" src="" allowfullscreen></iframe>
+
+    <!-- Image Copyright Info -->
+    <p id="copyright"></p>
+
+    <!-- API-Returned Explanation for APOD Object -->
+    
+    <div class="explanation">
+        <p id="apod_explaination"></p>
+    </div>
+
+  </div>  <!-- End API Elements and Main Container -->
+
+<!-- Footer Elements -->
+    <div class="footer">
+
+      <!-- APOD Facebook Icon -->
+
+      <a href="https://www.facebook.com/AstronomyPictureOfTheDay" target="_blank"><img src="yellow-icons/facebook-square.png"></a>
+
+      <!-- APOD Twitter Icon -->
+
+      <a href="https://twitter.com/apod" target="_blank"><img src="yellow-icons/twitter.png"></a>
+
+      <!-- APOD Instagram Icon -->
+
+      <a href="https://instagram.com/astronomypicturesdaily/" target="_blank"><img src="yellow-icons/instagram.png"></a>
+
+      <!-- Friends of APOD (FAPOD) Link to Website -->
+
+      <div class="FAPOD-button">
+        <a href="http://friendsofapod.org/" target="_blank"><p class="first-word">Friends of</p><p class="second-word">APOD</p></a>
+      </div>
+
+      <!-- Link to NASA'S Original APOD Website -->
+
+      <div class="NASA-APOD-button">
+        <a href="http://apod.nasa.gov/apod/astropix.html" target="_blank"><p class="first-word">Original</p><p class="second-word">NASA APOD</p></a>
+      </div>
+
+    </div>  <!-- End Footer Elements-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="modal.js"></script>
+
+</body> <!-- End Body -->
+</html> <!-- End HTML Structure-->
